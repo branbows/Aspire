@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Menorah OES - Examination System</title>
+
+    <meta name="description" content="Menorah OES, 
+An Examination System is a Conquerors Product
+">
+    <meta name="author" content="Conquerors Software Technologies Pvt. Ltd">
+    <meta name="copyright" content="Conquerors Software Technologies Pvt. Ltd">
+    <meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+    <meta name="date" content="2016-11-23T00:00:00+01:00">
+    <link rel="icon" href="assets/images/Wg9dSY7az6WgXpO.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+
+
+
+    <script src="assets/js/jquery.js"></script>
+
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+
+    <script>
+        document.createElement('section');
+        var duration = '500',
+            easing = 'easeInCirc';
+
+    </script>
+    <script src="assets/js/script.js"></script>
+
+    <style>
+        html {
+            background-color: #FFFFFF;
+            color: #383838;
+        }
+
+        ::-moz-selection {
+            background: #444444;
+            color: #DDDDDD;
+        }
+
+        ::selection {
+            background: #444444;
+            color: #DDDDDD;
+        }
+
+        #documenter_sidebar #documenter_logo {
+            background-image: url(assets/images/image_1.png);
+        }
+
+        a {
+            color: #0000FF;
+        }
+
+        .btn {
+            border-radius: 3px;
+        }
+
+        .btn-primary {
+            background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+            background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+            background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+            background-image: linear-gradient(top, #0088CC, #0044CC);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+            border-color: #0044CC #0044CC #bfbfbf;
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:active,
+        .btn-primary.active,
+        .btn-primary.disabled,
+        .btn-primary[disabled] {
+            border-color: #0088CC #0088CC #bfbfbf;
+            background-color: #0044CC;
+        }
+
+        hr {
+            border-top: 1px solid #EBEBEB;
+            border-bottom: 1px solid #FFFFFF;
+        }
+
+        #documenter_sidebar,
+        #documenter_sidebar ul a {
+            background-color: #DDDDDD;
+            color: #222222;
+        }
+
+        #documenter_sidebar ul a {
+            -webkit-text-shadow: 1px 1px 0px #EEEEEE;
+            -moz-text-shadow: 1px 1px 0px #EEEEEE;
+            text-shadow: 1px 1px 0px #EEEEEE;
+        }
+
+        #documenter_sidebar ul {
+            border-top: 1px solid #AAAAAA;
+        }
+
+        #documenter_sidebar ul a {
+            border-top: 1px solid #EEEEEE;
+            border-bottom: 1px solid #AAAAAA;
+            color: #444444;
+        }
+
+        #documenter_sidebar ul a:hover {
+            background: #444444;
+            color: #DDDDDD;
+            border-top: 1px solid #444444;
+        }
+
+        #documenter_sidebar ul a.current {
+            background: #444444;
+            color: #DDDDDD;
+            border-top: 1px solid #444444;
+        }
+
+        #documenter_copyright {
+            display: block !important;
+            visibility: visible !important;
+        }
+
+
+
+        #new_features > ul li {
+          color:#444; /* set color of list item to a dark gray */
+            list-style:none; /* if you’re not already using a reset */
+        }
+
+        #new_features > ul li:before {
+          color:#0870b6; /* set color to red */
+          content:"\25AA"; /* /2022 is the numerical unicode for &bull; */
+          font-size:3.0em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
+          padding-right:.25em; /* give the bullet some padding from the text Make sure to use em*/
+          position:relative;
+            top:.2em; /* set the vertical position of the bullet if necessary. Make sure to use em or % */
+        }   
+
+
+            /*Body Styling */
+
+            body {
+              font-family: 'Open Sans', San-Serif;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+            }
+
+            h1 {
+              margin-top:80px;
+              font-weight: bold;
+            }
+
+            p {
+              margin-top: 25px;
+              margin-bottom: 25px;
+            }
+
+            .btn {
+              margin-left: 10px;
+              margin-right: 10px;
+            }
+            /* Boostrap Buttons Styling */
+
+            .btn-default {
+              font-family: Raleway-SemiBold;
+              font-size: 13px;
+              color: rgba(108, 88, 179, 0.75);
+              letter-spacing: 1px;
+              line-height: 15px;
+              border: 2px solid rgba(108, 89, 179, 0.75);
+              border-radius: 40px;
+              background: transparent;
+              transition: all 0.3s ease 0s;
+            }
+
+            .btn-default:hover {
+              color: #FFF;
+              background: rgba(108, 88, 179, 0.75);
+              border: 2px solid rgba(108, 89, 179, 0.75);
+            }
+
+            .btn-primary {
+              font-family: Raleway-SemiBold;
+              font-size: 13px;
+              color: rgba(58, 133, 191, 0.75);
+              letter-spacing: 1px;
+              line-height: 15px;
+              border: 2px solid rgba(58, 133, 191, 0.75);
+              border-radius: 40px;
+              background: transparent;
+              transition: all 0.3s ease 0s;
+            }
+
+            .btn-primary:hover {
+              color: #FFF;
+              background: rgba(58, 133, 191, 0.75);
+              border: 2px solid rgba(58, 133, 191, 0.75);
+            }
+
+            .btn-success {
+              font-family: Raleway-SemiBold;
+              font-size: 13px;
+              color: rgba(103, 192, 103, 0.75);
+              letter-spacing: 1px;
+              line-height: 15px;
+              border: 2px solid rgba(103, 192, 103, 0.75);
+              border-radius: 40px;
+              background: transparent;
+              transition: all 0.3s ease 0s;
+            }
+
+            .btn-success:hover {
+              color: #FFF;
+              background: rgb(103, 192, 103, 0.75);
+              border: 2px solid rgb(103, 192, 103, 0.75);
+            }
+
+            .btn-info {
+              font-family: Raleway-SemiBold;
+              font-size: 13px;
+              color: rgba(91, 192, 222, 0.75);
+              letter-spacing: 1px;
+              line-height: 15px;
+              border: 2px solid rgba(91, 192, 222, 0.75);
+              border-radius: 40px;
+              background: transparent;
+              transition: all 0.3s ease 0s;
+            }
+
+            .btn-info:hover {
+              color: #FFF;
+              background: rgba(91, 192, 222, 0.75);
+              border: 2px solid rgba(91, 192, 222, 0.75);
+            }
+
+            .btn-warning {
+              font-family: Raleway-SemiBold;
+              font-size: 13px;
+              color: rgba(240, 173, 78, 0.75);
+              letter-spacing: 1px;
+              line-height: 15px;
+              border: 2px solid rgba(240, 173, 78, 0.75);
+              border-radius: 40px;
+              background: transparent;
+              transition: all 0.3s ease 0s;
+            }
+
+            .btn-warning:hover {
+              color: #FFF;
+              background: rgb(240, 173, 78, 0.75);
+              border: 2px solid rgba(240, 173, 78, 0.75);
+            }
+
+            .btn-danger {
+              font-family: Raleway-SemiBold;
+              font-size: 13px;
+              color: rgba(217, 83, 78, 0.75);
+              letter-spacing: 1px;
+              line-height: 15px;
+              border: 2px solid rgba(217, 83, 78, 0.75);
+              border-radius: 40px;
+              background: transparent;
+              transition: all 0.3s ease 0s;
+            }
+
+            .btn-danger:hover {
+              color: #FFF;
+              background: rgba(217, 83, 78, 0.75);
+              border: 2px solid rgba(217, 83, 78, 0.75);
+            }
+
+
+    </style>
+
+</head>
+
+<body class="documenter-project-Menorah OES">
+    <div id="documenter_sidebar">
+        <a href="#documenter_cover" id="documenter_logo"></a>
+        <ul id="documenter_nav">
+            <li><a class="current" href="#documenter_cover">Start</a></li>
+
+            <!-- <li><a href="#migration" title="Migration">Migration of Menorah OES old version to new version</a></li> -->
+
+
+            <li><a href="#new_features" title="Changes">New Features</a></li>
+
+
+            <li><a href="#features" title="Features">New Feature:- Section Type Exams Management</a></li>
+
+            <li><a href="#themes" title="Themes">New Feature:- Theme Management</a></li>
+
+            <li><a href="#rechaptcha" title="reChaptcha">New Feature:- reChaptcha Management</a></li>
+
+
+
+            <li><a href="#overview" title="Overview">Overview</a></li>
+
+
+
+            <li><a href="#requirements" title="Requirements">Requirements</a></li>
+            <li><a href="#installation" title="Installation">Installation</a></li>
+            <li><a href="#project-installation" title="Project Installation">Server Installation</a></li>
+            <li><a href="#social-logins" title="Social Logins">Social Logins</a></li>
+            <li><a href="#login" title="Login">Login</a></li>
+            <li><a href="#master_settings" title="Master Settings">Master Settings</a></li>
+            <li><a href="#languages" title="Languages">Languages</a></li>
+            <li><a href="#users" title="Users">Users</a></li>
+            <li><a href="#subjects" title="Subjects">Subjects</a></li>
+            <li><a href="#topics" title="Topics">Topics</a></li>
+            <li><a href="#question_bank" title="Question Bank">Question Bank</a></li>
+            <li><a href="#instructions" title="Instructions">Instructions</a></li>
+            <li><a href="#quiz_categories" title="Quiz Categories">Quiz Categories</a></li>
+            <li><a href="#quizzes" title="Quizzes">Quizzes</a></li>
+            <li><a href="#exam_series" title="Exam Series">Exam Series</a></li>
+            <li><a href="#coupon_codes" title="Coupon Codes">Coupon Codes</a></li>
+            <li><a href="#lms_categories" title="LMS Categories">LMS Categories</a></li>
+            <li><a href="#lms_contents" title="LMS Contents">LMS Contents</a></li>
+            <li><a href="#lms_series" title="LMS Series">LMS Series</a></li>
+            <li><a href="#payments_module" title="Payments Module">Payments Module</a></li>
+            <li><a href="#notifications" title="Notifications">Notifications</a></li>
+            <li><a href="#feedbacks" title="Feedbacks">Feedbacks</a></li>
+            <li><a href="#parent" title="Parent">Parent</a></li>
+            <li><a href="#student" title="Student">Student</a></li>
+
+        </ul>
+        <div id="documenter_copyright">Copyright Conquerors Software Technologies Pvt. Ltd 2016<br> made with the <a href="http://rxa.li/documenter">Documenter v2.0</a>
+        </div>
+    </div>
+    <div id="documenter_content" data-spy="scroll" data-target="#documenter_sidebar" data-offset="0" class="">
+        <section id="documenter_cover">
+            <h1>Menorah OES</h1>
+            <h2>Examination System</h2>
+            <div id="documenter_buttons">
+
+
+                <div class="simpl-btn">
+                   
+                    <a href="#master_settings" class="btn btn-primary">Admin</a> 
+                    <a href="#student" class="btn btn-success">User</a>
+                    <a href="#parent" class="btn btn-info">Info</a>
+                    <a href="#changes_log" class="btn btn-warning">OES Update Change log</a>
+
+                </div>
+
+
+                <!-- <a href="#master_settings" class="btn btn-primary btn-large">Admin</a> 
+                <a href="#student" class="btn btn-large">User</a> 
+                <a href="#parent" class="btn btn-large">Parent</a>
+                <a href="#changes_log" class="btn btn-large">OES Update Change log</a> -->
+
+            </div>
+            <hr>
+            <ul>
+                <li>By: Conquerors Software Technologies Pvt. Ltd</li>
+                <li>Site: <a>digisamaritan.com</a></li>
+
+                <li><a href="https://digisamaritan.com/">digisamaritan.com/</a></li>
+                <li>email: <u>digisamaritan@gmail.com</u></li>
+            </ul>
+            <p>Thank you for purchasing my Project. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!</p>
+        </section>
+
+
+
+         <!--section id="migration">
+            <div class="page-header">
+                <h3>Migration of Menorah OES old version to new version</h3><br>
+
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/z01Fju3aqcg" allowfullscreen="" width="1000px" height="500px"></iframe> 
+
+                <hr class="notop">
+            </div>
+             <h4><u>Step1:</u></h4> 
+             <h4>Extract the new dump</h4> 
+              <p>
+                <img alt="" src="assets/images/m-1.png" style="width: 1000px; height: 500px;"></p>
+            <p>
+
+            <h4><u>Step2:</u></h4> 
+             <h4>Copy old dump "uploads" folder to new dump</h4> 
+             <p><b>Old dump uploads folder path -> old_dump_name/ </b></p>
+             <p><b>New dump uploads folder path -> new_dump_name/public </b></p>
+              <p>
+                <img alt="" src="assets/images/m-2.png" style="width: 1000px; height: 500px;"></p>
+            <p>
+
+            <h4><u>Step3:</u></h4> 
+             <h4>Open old dump " .env " file </h4> 
+             <p><b>Old dump .env file path -> old_dump_name/local/ </b></p>
+            
+              <p>
+                <img alt="" src="assets/images/m-3.png" style="width: 1000px; height: 500px;"></p>
+            <p>
+
+                  <h4><u>Step4:</u></h4> 
+             <h4>Open new dump " .env " file </h4> 
+             <p><b>New dump .env file path -> new_dump_name/ </b></p>
+            
+              <p>
+                <img alt="" src="assets/images/m-4.png" style="width: 1000px; height: 500px;"></p>
+            <p>
+
+                 <h4><u>Step5:</u></h4> 
+             <h4>Replace new dump .env file data with old dump .env file data</h4> 
+            
+              <p>
+                <img alt="" src="assets/images/m-10.png" style="width: 1000px; height: 500px;"></p>
+            <p>
+
+                 <h4><u>Step6:</u></h4> 
+             <h4>Add these 4 lines at the end of .env file (new dump)</h4> 
+            
+             <h4>NOCAPTCHA_SECRET=</h4>
+             <h4>NOCAPTCHA_SITEKEY=</h4>
+             <h4>RAZORPAY_APIKEY=</h4>
+             <h4>RAZORPAY_SECRET=</h4>
+
+              <p>
+                <img alt="" src="assets/images/m-7.png" style="width: 800px; height: 200px;"></p>
+            <p>
+
+                 <h4><u>Step7:</u></h4> 
+             <h4>Now you can access with new_dump_name</h4> 
+            <p>
+                <img alt="" src="assets/images/m-8.png" style="width: 1000px; height: 500px;"></p>
+            <p>
+
+
+             <h4>Applciation is successfully updated</h4> 
+            <p>
+                <img alt="" src="assets/images/m-11.png" style="width: 1000px; height: 500px;"></p>
+            <p>
+
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+        </section-->
+
+
+
+       <section id="new_features">
+
+
+
+            <div class="page-header">
+                <h3> OES update - New Features </h3>
+                <hr class="notop">
+            </div>
+
+            <ul>
+
+              <li>Resume Builder</li>
+
+              <li>New Exam Layout</li>
+
+              <li>Search feature added for Practice Exams, LMS front end</li>
+
+              <li>Admin can add unlimited pages (front end CMS)</li>
+
+              <li>Admin can add FAQs, which reflects in front end</li>
+
+              <li>Admin can add Blogs, which reflects in front end</li>
+
+              <li>All quizzes free and paid can appear on the home page with/without registration</li>
+
+              <li>Student feedback about system or exams based. Only admin approved Testimonies will be displayed in front end</li>
+
+              <li>The Administrator can assign the categories to the students</li>
+
+              <li>Admin can Enable/Disable User Account</li>
+
+              <li>Email Activation link for registered users</li>
+
+            </ul>
+
+           
+            <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+
+
+            <h4><strong>1.&nbsp;</strong>The Administrator can assign the categories to the students</h4>
+            <h4><img alt="" src="assets/images/update2.png" style="width: 100%; height: 100%;"></h4>
+
+
+             <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+            <h4><strong>2.&nbsp;</strong>All the tests with registration, without registration and paid tests can be appeared on the homepage Practice Exams tab</h4>
+            <p>If quiz type is Free, User can attempt with or without login  </p>
+            <p>If quiz type is Paid, If user not logged in then it will redirect to login page when user tries to attempt paid exam </p>
+            <p>If quiz type is Paid, If user logged in then it will follow same procedure as purchase quiz then user can attempt quiz </p>
+            <h4><img alt="" src="assets/images/update3.png" style="width: 100%; height: 100%;"></h4>
+
+            <h4><img alt="" src="assets/images/update4.png" style="width: 100%; height: 100%;"></h4>
+
+
+             <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+
+            <h4><strong>3.&nbsp;</strong>Student Feedback about System or Exams based. Only admin approved testimonies will be displayed on the front end</h4>
+            <h4><img alt="" src="assets/images/update5.png" style="width: 100%; height: 100%;"></h4>
+
+            <h4><img alt="" src="assets/images/update6.png" style="width: 100%; height: 100%;"></h4>
+
+
+
+             <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+
+
+             <h4><strong>4.&nbsp;</strong>Give an Option to admin for adding Front end pages</h4>
+            <h4><img alt="" src="assets/images/update7.png" style="width: 100%; height: 100%;"></h4>
+
+            <h4><img alt="" src="assets/images/update8.png" style="width: 100%; height: 100%;"></h4>
+
+
+             <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+
+            <h4><strong>5.&nbsp;</strong>Option for  Adding FAQs to Admin, can be shown in front end</h4>
+            <h4><img alt="" src="assets/images/update9.png" style="width: 100%; height: 100%;"></h4>
+
+            <h4><img alt="" src="assets/images/update10.png" style="width: 100%; height: 100%;"></h4>
+
+
+
+             <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+
+            <h4><strong>7.&nbsp;</strong>Home Page Search bar</h4>
+            <h4><img alt="" src="assets/images/update11.png" style="width: 100%; height: 100%;"></h4>
+
+            <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+
+
+            <h4><strong>8.&nbsp;</strong>Complete Account Disable option for the admin if any Fraud user/activity</h4>
+            <h4><img alt="" src="assets/images/update12.png" style="width: 100%; height: 100%;"></h4>
+
+            <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+
+
+
+
+            <h4><strong>9.&nbsp;</strong>Admin can add Blogs, it can be shown in front end</h4>
+            <h4><img alt="" src="assets/images/update13.png" style="width: 100%; height: 100%;"></h4>
+
+            <h4><img alt="" src="assets/images/update14.png" style="width: 100%; height: 100%;"></h4>
+
+            <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+
+
+
+
+
+            <h4><strong>10.&nbsp;</strong>Resume builder</h4>
+
+            <p>Student can create resumes in his account.</p>
+            <p>Admin can view resumes of any user from his panel.</p>
+
+
+            <p>Admin can add,edit,delete resume templates, These are templates which student can utilize after he created his resume.</p>
+
+            <h4><img alt="" src="assets/images/update15.png" style="width: 100%; height: 100%;"></h4>
+
+
+            <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+
+
+
+
+            <p>Admin can go to student account and view resume.</p>
+
+            <h4><img alt="" src="assets/images/update16.png" style="width: 100%; height: 100%;"></h4>
+
+
+            <p>Student can build his resume from his panel.</p>
+
+            <h4><img alt="" src="assets/images/update17.png" style="width: 100%; height: 100%;"></h4>
+
+
+            <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+
+            <p>Download Resume In Different Templates.</p>
+            <h4><img alt="" src="assets/images/update18.png" style="width: 100%; height: 100%;"></h4>
+
+
+            <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+
+
+
+
+
+
+
+            <h4><strong>11.&nbsp;</strong>New Exam layout</h4>
+
+            <p>Take the Exam.</p>
+            <h4><img alt="" src="assets/images/update19.png" style="width: 100%; height: 100%;"></h4>
+
+            <p>Review Questions.</p>
+            <h4><img alt="" src="assets/images/update20.png" style="width: 100%; height: 100%;"></h4>
+
+
+            <p>Section type Exams.</p>
+            <h4><img alt="" src="assets/images/update21.png" style="width: 100%; height: 100%;"></h4>
+
+             <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+         <section id="features">
+            <div class="page-header">
+                <h3>Section Type Exams or Quizzes Management</h3><br>
+
+                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/7L9XmXbvB6Q" allowfullscreen="" width="1000px" height="500px"></iframe>
+
+                <hr class="notop">
+
+                 <h4>Create section type exams</h4> 
+                 <p>
+                <img alt="" src="assets/images/Sq-1.png" style="width: 1000px; height: 500px;"></p>
+                <p>
+
+               <h4>Select exam type as Section with timer or Section with no timer</h4> 
+                 <p>
+                <img alt="" src="assets/images/Sq-2.png" style="width: 800px; height: 1000px;"></p>
+                <p>
+
+             <h4>Update the questions to Sections</h4> 
+                 <p>
+                <img alt="" src="assets/images/Sq-3.png" style="width: 800px; height: 500px;"></p>
+                <p>
+
+               <h4>Create Sections and time with questions</h4> 
+                 <p>
+                <img alt="" src="assets/images/Sq-4.png" style="width: 1000px; height: 500px;"></p>
+                <p>
+
+            <h4>Edit Sections and time</h4> 
+                 <p>
+                <img alt="" src="assets/images/Sq-5.png" style="width: 1000px; height: 500px;"></p>
+                <p>
+
+            <h4>Update questions to created sections</h4> 
+                 <p>
+                <img alt="" src="assets/images/Sq-6.png" style="width: 1000px; height: 500px;"></p>
+                <p>
+
+            </div>
+
+
+            
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </section>
+
+
+
+
+         <section id="themes">
+            <div class="page-header">
+                <h3>Theme Management</h3><br>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/d4Dzs_GYCkc" allowfullscreen="" width="1000px" height="500px"></iframe>
+                <hr class="notop">
+            </div>
+
+             <h4>Change the theme</h4> 
+                 <p>
+                <img alt="" src="assets/images/t-1.png" style="width: 1000px; height: 500px;"></p>
+                <p>
+
+            <h4>Update theme settings for home pages data</h4> 
+                 <p>
+                <img alt="" src="assets/images/t-2.png" style="width: 500px; height: 1000px;"></p>
+                <p>
+          
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+        </section>
+
+
+        <section id="rechaptcha">
+            <div class="page-header">
+                <h3>reChaptcha Management</h3><br>
+                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lzjmmSme2Q8" allowfullscreen="" width="1000px" height="500px"></iframe> 
+                <hr class="notop">
+            </div>
+
+             <h4>Open reChaptacha Settings</h4> 
+                 <p>
+                <img alt="" src="assets/images/re-1.png" style="width: 1000px; height: 500px;"></p>
+                <p>
+
+            <h4>Create Site key and Secret key</h4> 
+                 <p>
+                <img alt="" src="assets/images/re-2.png" style="width: 1000px; height: 1000px;"></p>
+                <p>
+
+            <h4>Update Site key and Secret key in reChaptcha Settings</h4> 
+                 <p>
+                <img alt="" src="assets/images/re-3.png" style="width: 850px; height: 500px;"></p>
+                <p>
+        
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+        </section>
+
+        <section id="overview">
+            <div class="page-header">
+                <h3>Overview</h3>
+                <hr class="notop">
+            </div>
+            <p>
+                It is a examination system with all option that a modern system needs.</p>
+            <p>
+                It fulfils all the needs of the user for taking the exam</p>
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+        </section>
+
+
+
+
+
+
+        <section id="requirements">
+            <div class="page-header">
+                <h3>Requirements</h3>
+                <hr class="notop">
+            </div>
+
+            <ul>
+
+              <li>PHP >= 7.1.3</li>
+
+              <li>Mcrypt PHP Extension</li>
+
+              <li>OpenSSL PHP Extension</li>
+
+              <li>Mbstring PHP Extension</li>
+
+              <li>Tokenizer PHP Extension</li>
+
+              <li>BCMath PHP Extension</li>
+
+              <li>Ctype PHP Extension</li>
+
+              <li>JSON PHP Extension</li>
+
+              <li>PDO PHP Extension</li>
+
+              <li>XML PHP Extension</li>
+
+              <li>PHP Fileinfo extension must be installed/enabled to use Intervention Image</li>
+
+              <li>PHP needs to have the&nbsp;zip extension&nbsp;installed for excel upload below are links.</li>
+
+              <li><a class="Xx" data-display="http://www.php.net/manual/en/zip.installation.php" data-sanitized="http://www.google.com/url?q=http%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fzip.installation.php&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHUpWgQGj-nnQL1uvdh0lnPMjEBvg" dir="ltr" href="http://www.google.com/url?q=http%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fzip.installation.php&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHUpWgQGj-nnQL1uvdh0lnPMjEBvg" rel="nofollow noreferrer" style="unicode-bidi: isolate; color: rgb(38, 50, 56); font-size: 13px;" tabindex="-1" target="_blank">http://www.php.net/manual/en/zip.installation.php</a></li>
+
+              <li><a class="Xx" data-display="http://www.php.net/manual/en/book.zip.php" data-sanitized="http://www.google.com/url?q=http%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.zip.php&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFkl-BJzneHjhbbYc5ywygDn3E3Gg" dir="ltr" href="http://www.google.com/url?q=http%3A%2F%2Fwww.php.net%2Fmanual%2Fen%2Fbook.zip.php&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFkl-BJzneHjhbbYc5ywygDn3E3Gg" rel="nofollow noreferrer" style="unicode-bidi: isolate; color: rgb(38, 50, 56); font-size: 13px;" tabindex="-1" target="_blank">http://www.php.net/manual/en/book.zip.php</a></li>
+
+           
+            </ul>
+
+
+            <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+        </section>
+
+
+
+        <section id="installation">
+            <div class="page-header">
+                <h3>Installation</h3>
+                <hr class="notop">
+            </div>
+            <p>
+                Please follow to installation steps for Localhost</p>
+            <p>
+                <strong>Step1:&nbsp;</strong>Extract the Project and Past it in htdocs folder</p>
+            <p>
+                <strong>Step 2:</strong></p>
+            <p>
+                localhost/project_folder_name/install</p>
+            <p>
+                eg: localhost/exam/install</p>
+            <p>
+                and follow the screenshots</p>
+            <h4 id="installation_installation_process_">Installation Process :</h4>
+            <p>
+                <img alt="" src="assets/images/image_91.png" style="width: 713px; height: 758px;"></p>
+            <p>
+                &nbsp;</p>
+            <p>
+                <img alt="" src="assets/images/image_90.png" style="width: 484px; height: 253px;"></p>
+            <p>
+                <img alt="" src="assets/images/image_89.png" style="width: 652px; height: 501px;"></p>
+            <p>
+                &nbsp;</p>
+            <h4 id="installation_create_user_account_for_the_first_time">Create user account for the first time</h4>
+            <p>
+                <img alt="" src="assets/images/image_92.png" style="width: 529px; height: 578px;"></p>
+            <p>
+                After successfully creation of the user, it will be redirected to login screen</p>
+            <p><strong>Note: </strong>If database already eixsts, please edit the .env file which is at /project-folder/local/.env</p>
+            <p>
+                <h5>Update the following information in .env file</h5>
+            </p>
+            <p>DB_HOST=localhost(default)</p>
+            <p>DB_PORT=3306(default)</p>
+            <p>DB_DATABASE=Your database name</p>
+            <p>DB_USERNAME=Database Username</p>
+            <p>DB_PASSWORD=Password</p>
+
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+        </section>
+        <section id="project-installation">
+            <div class="page-header">
+                <h3>Server Installation Steps :</h3>
+                <hr class="notop">
+            </div>
+            <ol>
+                <li>Cpanel Login</li>
+                <p><img alt="" src="assets/images/image1.png"></p>
+                <li>Go to File Manager</li>
+                <p><img alt="" src="assets/images/image8.png"></p>
+                <li>Click on Public_html folder(Check weather project installed or not)</li>
+                <p><img alt="" src="assets/images/image6.png"></p>
+                <li>Upload the Project folder Zip into Public_html folder</li>
+                <li>Extract the Zip folder here</li>
+                <li>Create the Database using Mysql Wizard</li>
+                <p><img alt="" src="assets/images/image2.png"></p>
+                <ol>
+                    <li>Create Database</li>
+                    <p><img alt="" src="assets/images/image4.png"></p>
+                </ol>
+                <li>Note down DB Name,DB Password,DB Username, <br>Type URL www.yourserver-address/install
+ and follow <a href="#installation" title="Installation">Installation Steps</a></li>
+
+
+             <h3>Manuall Installatation:</h3>
+             <br>
+             <strong>Note: </strong>If you are installing the system manually, please do install the database with data as it has default admin user with credentials <b>owner@owner.com</b> and <b>password</b>
+                <li>Go to Phpmyadmin (Check weather Database Created or not..? )</li>
+                <p><img alt="" src="assets/images/image7.jpg"></p>
+                <li>If Database Created upload the Database file which is available in Project Folder/public/downloads/database/install_dummy_data.sql and click on Go</li>
+                <p><img alt="" src="assets/images/image5.png"></p>
+                <li>Edit the .env file in project folder and update with new Database credentials(Which already created).</li>
+                <p><img alt="" src="assets/images/image3.png"></p>
+            </ol>
+            <p>Still you’re facing Issues in Configuration Please Contact Us:</p>
+            <ul>
+                <li><strong>Support Portal:</strong> <a href="https://cstpl.freshdesk.com">  https://cstpl.freshdesk.com</a> </li>
+                <li><strong>Skype ID:</strong> <a href="#">dv.developer3</a></li>
+            </ul>
+        </section>
+        <section id="social-logins">
+            <div class="page-header">
+                <h3>Facebook App Setup</h3><br>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bOXZn5CZgZ8" allowfullscreen="" width="1000px" height="500px"></iframe>
+                <hr class="notop">
+            </div>
+            <h5>Overview:</h5><br>
+            <p>This document provides instructions on how to properly setup a Facebook application so that users can login/register via Facebook on your site.</p>
+            <h5>Creating a new app</h5>
+            <ol>
+                <li>To allow users to login to your site with their Facebook account you need to create a Facebook app. To create a new Facebook app please do the following:</li>
+                <li>Go to the Facebook Developers site:<a href="https://developers.facebook.com/">https://developers.facebook.com/</a></li>
+                <li>If you are not logged in, login to the site using your Facebook account details</li>
+                <li>Once logged in, click on Create App button. Fill out the Display Name, Contact Email and choose a category for your app. Then click the Create App button.</li>
+            </ol>
+            <p><img alt="" src="assets/images/image9.jpg"></p>
+            <em> Note: After clicking this button you may be presented with a security check</em><br>
+            <h5>Select "Set Up" for "Facebook Login"</h5>
+            <p><img alt="" src="assets/images/image16.jpg"></p>
+            <h5>Select "Web option”</h5>
+            <p><img alt="" src="assets/images/image15.jpg"></p>
+            <h5>Set your "Site URL"</h5>
+            <p><img alt="" src="assets/images/image18.jpg"></p>
+            <h5>Skip all others step of the process.</h5>
+            <p><img alt="" src="assets/images/image17.jpg"></p>
+            <h5>Settings Tab ➔Basic</h5>
+            <p><img alt="" src="assets/images/image10.jpg"></p>
+            <h5>Settings Tab ➔Advanced</h5>
+            <p>App Restrictions - You can restrict your app to specific age range and countries if your site references alcohol or an adult nature site.</p>
+            <p><img alt="" src="assets/images/image11.jpg"></p>
+            <h5>Products Tab</h5>
+            <ol>
+                <li> 1.On the Products tab, click on +Add Product then click Get Started button on Facebook Login</li>
+                <p><img alt="" src="assets/images/image12.jpg"></p>
+                <li>2. After you clicked the Get Started button, click on Settings under Facebook Login </li>
+            </ol>
+            <h5>Client OAuth Settings </h5>
+            <p> You just need to enter your site's login, register and account's social tab URIs into the Valid OAuth redirects URIs field.</p>
+            <p><img alt="" src="assets/images/image13.jpg"></p>
+            <p> You can just leave the Deauthorize Callback URL blank then click on save changes.</p>
+            <h5>App Review Tab</h5>
+            <p>Once you have done all these steps you can go to the App Review tab to make the app live. The app does not need to be submitted for approval as the app will only be requesting the standard data from users. To make the app live all you need to do is click the switch button from No to Yes:</p>
+            <p><img alt="" src="assets/images/image14.jpg"></p>
+            <h5>App Setup Complete</h5>
+            <p>Once you have done all that, the app is now complete. You should now add the App ID and App Secret into the Site Settings→ Social Logins if you have not already done so.</p><br>
+            <div class="page-header">
+                <h3>Google + App Setup</h3>
+                <hr class="notop">
+            </div>
+            <h5>Overview:</h5><br>
+            <p>This document provides instructions on how to properly setup a Google+ application so that users can login/register via Google on your site.</p>
+            <h5>Enabling API</h5>
+            <p>To allow users to login to your site with their Google+ account you need to create a Google+ project and enable Google+ API. To enable API and create new Google+ project please do the following:   </p>
+            <ul>
+                <li>Login with your Google account and go to the developer console website:<a href="https://console.developers.google.com/">https://console.developers.google.com/</a></li>
+                <li>Click the “Enable and manage APIs" </li>
+            </ul>
+            <p><img alt="" src="assets/images/image22.png"></p><br>
+            <h5>Go to Social APIs - Google+ API </h5>
+            <p><img alt="" src="assets/images/image24.png"></p><br>
+            <h5>Enable Google + API </h5>
+            <p><img alt="" src="assets/images/image23.png"></p><br>
+            <h5>Creating new project and adding credentials </h5>
+            <p>Enter the project details in the pop-up that appears and click the “create” button</p>
+            <p><img alt="" src="assets/images/image26.png"></p><br>
+            <p>Go to Credentials sidebar and add credentials OAuth Client ID</p>
+            <p><img alt="" src="assets/images/image25.png"></p>
+            <h5>Which API are you using - Google+ API</h5>
+            <h5>Where you will be calling the API from - Web Browser</h5>
+            <p><img alt="" src="assets/images/image20.png"></p>
+            <h5>Create client ID</h5>
+            <p><img alt="" src="assets/images/image19.png"></p>
+            <h5>Credentials</h5>
+            <p><img alt="" src="assets/images/image21.png"></p>
+            <p>After the client ID is created you will see some information appear on the page</p><br>
+            <p>Copy and paste the Client ID and Client Secret into the Google+ tab on the Settings>Site Settings > Social Login  page to connect your site to your App.</p>
+        </section>
+        <section id="login">
+            <div class="page-header">
+                <h3>Login</h3>
+                <hr class="notop">
+            </div>
+            <p>
+                <img alt="" src="assets/images/image_102.png" style="width: 1366px; height: 659px;"></p>
+            <p>
+                After Installing the software, you will be redirected to the login page.</p>
+            <p>
+                Login to the system with the Owner credentials, then you will be redirected to Owner&nbsp;dashboard</p>
+            <p>
+                <img alt="" src="assets/images/image_2.png" style="width: 1349px; height: 1237px;"></p>
+
+        </section>
+        <section id="master_settings">
+            <div class="page-header">
+                <h3>Master Settings</h3>
+                <hr class="notop">
+            </div>
+            <p> With this module you can control the total site based on the requirement.</p>
+            <div class="alert alert-info">
+                These settings are loaded to the site as Lazy Loading to improve the performance of the site i.e., load the settings what it requires instead of loading all settings at a time. We made it to hit the database as less as possible for getting the settings</div>
+            <p> It supports the settings for the following modules</p>
+            <ul>
+                <li> Site Settings</li>
+                <li> Payment Gateway Settings (PayU and Paypal)</li>
+                <li> Email Settings</li>
+
+                <li> Certificate Settings</li>
+                <li> SEO Settings</li>
+                <li> Module Management Settings</li>
+                <li> Email Templates</li>
+                <li> Paypal Settings</li>
+                <li> Payu Settings</li>
+                <li> Exam Settings</li>
+            </ul>
+            <p> <img alt="" src="assets/images/image_31.png" style="width: 1349px; height: 1237px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="master_settings_site_settings">Site Settings</h4>
+            <p> Contains the settings for the site. Please find the description for each field</p>
+            <p> <strong>Site Title: </strong>The title of the site</p>
+            <p> <strong>Site Logo: </strong>Logo for the site that will be shown</p>
+            <p> <strong>Site Favicon:</strong> Favicon for the website</p>
+            <p> <strong>Site Address, City, &nbsp;State, Country, Zipcode and Phone: </strong>These details will be displayed at contact us part</p>
+            <p> &nbsp;</p>
+            <p> <img alt="" src="assets/images/image_70.png" style="width: 1349px; height: 1237px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="master_settings_span_style" color_rgb_56,_56,_56_font_family_arial,_verdana,_arial,_sans_serif "payment_gateway_settings_span"><span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif;">Payment Gateway Settings</span></h4>
+            <div class="alert alert-info">
+                <span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif;">Currently it&nbsp;</span>supports&nbsp;<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif;">two payment gateways&nbsp;</span><span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif;">PayU and Paypal</span></div>
+            <h3>
+                <span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif;">Payu Settings</span></h3>
+            <p> <span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif;"><img alt="" src="assets/images/image_46.png" style="width: 1349px; height: 1237px;"></span></p>
+            <h3>
+                <span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif;">Paypal Settings</span></h3>
+            <p> <img alt="" src="assets/images/image_45.png"></p>
+            <p> &nbsp;</p>
+            <h4 id="master_settings_email_settings">Email Settings</h4>
+            <div class="alert alert-info">
+                This modules provides 8 mail drivers for sending emails. The supported drivers are: SMTP, &nbsp;Mail,&nbsp;Sendmail,&nbsp;Mailgun,&nbsp;Mandrill,&nbsp;SES, Sparkpost, Log</div>
+            <p> <strong>Mail Driver:</strong> Select any of the mail drivers from the available list</p>
+            <p> <strong>Mail Host: </strong>Update your hosting server</p>
+            <p> <strong>Mail Port: </strong>Port number</p>
+            <p> <strong>Mail Username: </strong>Admin/user email for sending emails</p>
+            <p> <strong>Mail Password: </strong>Email Password</p>
+            <p> <strong>Mail Encryption: </strong>default set to null</p>
+            <p> <img alt="" src="assets/images/image_6.png" style="width: 1349px; height: 1237px;"></p>
+            <p> &nbsp;</p>
+
+            <h4 id="master_settings_certificate_settings">Certificate Settings</h4>
+            <div class="alert alert-info">
+                With this module you can change the logos and contents of the certificate that need to be generated</div>
+            <p> <img alt="" src="assets/images/image_65.png" style="width: 1349px; height: 1237px;"></p>
+            <h4 id="master_settings_modules_management">Modules Management</h4>
+            <div class="alert alert-info">
+                This module gives&nbsp;flexibility to enable or disable any of the modules available in this system.</div>
+            <p> <img alt="" src="assets/images/image_68.png" style="width: 1349px; height: 1237px;"></p>
+            <h4 id="master_settings_email_templates">Email Templates</h4>
+            <p> In this module you can edit email templates as per your requirement</p>
+            <p> We have divided this template into 3 parts</p>
+            <p> 1) Header</p>
+            <p> 2) Content</p>
+            <p> 3) Footer</p>
+            <div class="alert alert-info">
+                Here the header and footer are common templates for all the email templates. Change at one place and it will be updated in all other templates.</div>
+            <div class="alert alert-info">
+                You can edit the Content part as per your requirement in each template.</div>
+            <p> <img alt="" src="assets/images/image_67.png" style="width: 1349px; height: 1237px;"></p>
+            <h3>
+                Editing email template</h3>
+            <p> In this you can edit the subject, &nbsp;from email, from name and content of the email as per the requirement</p>
+            <p> <img alt="" src="assets/images/image_66.png" style="width: 1349px; height: 1300px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="languages">
+            <div class="page-header">
+                <h3>Languages</h3>
+                <hr class="notop">
+            </div>
+            <p> This module helps you to make your site multilingual</p>
+            <p> Here we provided flexibility for user to change the site language as per the requirement</p>
+            <p> In this, you can create, edit or delete the languages</p>
+            <p> At any point of time you can set any one language as the default language.</p>
+            <h4 id="languages_features_nbsp">Features&nbsp;</h4>
+            <ul>
+                <li> <strong>Language strings created by it self </strong>
+                    <ul>
+                        <li>
+                            <div class="alert alert-info">
+                                By creating any new language, no need to update the strings. Our algorithm will generates the language strings from you and google API. For this you have to traverse the total site for the first time, so that our algorithm will fetch the strings from Google API and saves to database. From the next visit it will fetch the language strings from database</div>
+                        </li>
+                    </ul>
+                </li>
+                <li> <strong>Lazy loading</strong>
+                    <ul>
+                        <li>
+                            <div class="alert alert-info">
+                                As we are using&nbsp;<strong>Lazy Loading </strong>the&nbsp;language strings the performance will be good.</div>
+                        </li>
+                    </ul>
+                </li>
+                <li> <strong>Option for edit strings&nbsp;</strong>
+                    <ul>
+                        <li>
+                            <div class="alert alert-info">
+                                With this option, if the strings generated by Google are not meaningful as per the language specification then you can edit the strings manually as per your requirement</div>
+                        </li>
+                        <li>
+                            <div class="alert alert-info">
+                                Note: The Updated Language Strings are Effected only when user re-set &nbsp;the default language</div>
+                        </li>
+                    </ul>
+                </li>
+                <li> <strong>Set the default language</strong>
+                    <ul>
+                        <li>
+                            <div class="alert alert-info">
+                                With a single click you can change the site to default language</div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p> <img alt="" src="assets/images/image_19.png" style="width: 1349px; height: 1237px;"></p>
+            <h4 id="languages_create_edit_language">Create Edit Language</h4>
+            <p> Enter the language name as per your choice</p>
+            <p> Enter the language code as per the Google language codes provided</p>
+            <p> (<a href="https://cloud.google.com/translate/v2/translate-reference#supported_languages">https://cloud.google.com/translate/v2/translate-reference#supported_languages</a>)</p>
+            <p> <img alt="" src="assets/images/image_17.png" style="width: 610px; height: 522px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="languages_setting_default_language">Setting default language</h4>
+            <p> <img alt="" src="assets/images/image_18.png" style="width: 1219px; height: 567px;"></p>
+            <h4 id="languages_update_strings">Update Strings</h4>
+            <p> <img alt="" src="assets/images/image_20.png" style="width: 1208px; height: 558px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="users">
+            <div class="page-header">
+                <h3>Users</h3>
+                <hr class="notop">
+            </div>
+            <p> With this module, you can control all the users of the site</p>
+            <h4 id="users_features">Features</h4>
+            <ul>
+                <li> Multiple users types
+                    <ul>
+                        <li> It supports total of 4 types of users i.e.,
+                            <ul>
+                                <li> <strong>Owner: </strong>This user will have all options enabled in the site</li>
+                                <li> <strong>Admin: </strong>This user will have all options except delete option for the records</li>
+                                <li> <strong>User: </strong>This is a normal user who will have normal option enabled for taking the quiz and viewing the reports</li>
+                                <li> <strong>Parent: </strong>This user is having few option, i.e, to add the children/user, view the performance reports and to buy the packages for the user</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li> View detailed reports of user
+                    <ul>
+                        <li> With this option, you can view the total user reports</li>
+                    </ul>
+                </li>
+                <li> Import users by Excel
+                    <ul>
+                        <li> With this module the admin can import the user by excel</li>
+                        <li> For any failed records, an excel sheet will be downloaded with detailed error report and success report</li>
+                        <li>
+                            <div class="alert">
+                                The maximum no. of user records per excel sheet is 2000.</div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="alert alert-success">
+                <span style="color: rgb(70, 136, 71); background-color: rgb(252, 248, 227);">The difference between Owner and Admin is, Owner can delete any record but admin cannot delete.</span></div>
+            <h4 id="users_list_users">List Users</h4>
+            <p> <img alt="" src="assets/images/image_87.png" style="width: 1349px; height: 1237px;"></p>
+            <h4 id="users_add_user">Add User</h4>
+            <p> <img alt="" src="assets/images/image_83.png" style="width: 637px; height: 609px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="users_view_user_nbsp">View User&nbsp;</h4>
+            <p> <img alt="" src="assets/images/image_88.png" style="width: 1349px; height: 1237px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="users_import_users">Import Users</h4>
+            <p> <img alt="" src="assets/images/image_84.png" style="width: 1247px; height: 557px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="users_update_the_template">Update the template</h4>
+            <p> <img alt="" src="assets/images/image_85.png" style="width: 915px; height: 679px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="users_view_the_report">View the report</h4>
+            <p> In this you will be updated with clear messages for the updated and failed records</p>
+            <p> <img alt="" src="assets/images/image_86.png" style="width: 1365px; height: 729px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="subjects">
+            <div class="page-header">
+                <h3>Subjects</h3>
+                <hr class="notop">
+            </div>
+            <p> Features</p>
+            <ul>
+                <li> Maintain the list of subjects along with subject code</li>
+                <li> Import subjects with excel</li>
+                <li> Detailed reports will be Downloaded after excel upload</li>
+            </ul>
+            <h4 id="subjects_access_subjects_module">Access Subjects Module</h4>
+            <p> &nbsp;</p>
+            <p> <img alt="" src="assets/images/image_76.png"></p>
+            <h4 id="subjects_list_subjects">List Subjects</h4>
+            <p> <img alt="" src="assets/images/image_75.png" style="width: 1349px; height: 1237px;"></p>
+            <h4 id="subjects_add_subject">Add Subject</h4>
+            <p> <img alt="" src="assets/images/image_71.png" style="width: 1217px; height: 525px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="subjects_steps_for_upload_subjects_by_excel">Steps for upload subjects by excel</h4>
+            <p> <strong>1) Download Template</strong></p>
+            <p> <img alt="" src="assets/images/image_72.png" style="width: 1258px; height: 573px;"></p>
+            <p> <strong>2) Update Template and upload</strong></p>
+            <p> <img alt="" src="assets/images/image_73.png" style="width: 492px; height: 677px;"></p>
+            <p> <strong>3) View report</strong></p>
+            <p> <img alt="" src="assets/images/image_74.png" style="width: 771px; height: 524px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="topics">
+            <div class="page-header">
+                <h3>Topics</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="topics_features">Features</h4>
+            <ul>
+                <li> Main and sub topics relation
+                    <ul>
+                        <li> Topics can be created as Main and sub topics, e.g., any subject may have different subjects or units, those are considered as parent topics.</li>
+                        <li> In each chapter we may have sub topics, those are considered as child topics</li>
+                    </ul>
+                </li>
+                <li> Excel upload</li>
+                <li> Detailed reports will be Downloaded after the &nbsp;excel upload</li>
+            </ul>
+            <h4 id="topics_access_topics_module">Access Topics Module</h4>
+            <p> <img alt="" src="assets/images/image_82.png" style="width: 605px; height: 587px;"></p>
+            <h4 id="topics_list_topics">List topics</h4>
+            <p> <img alt="" src="assets/images/image_81.png" style="width: 1349px; height: 1512px;"></p>
+            <h4 id="topics_create_topic">Create topic</h4>
+            <p> <img alt="" src="assets/images/image_77.png" style="width: 949px; height: 596px;"></p>
+            <h4 id="topics_import_excel">Import excel</h4>
+            <p> <img alt="" src="assets/images/image_78.png" style="width: 707px; height: 465px;"></p>
+            <h4 id="topics_update_data">Update data</h4>
+            <p> <img alt="" src="assets/images/image_79.png" style="width: 1085px; height: 682px;"></p>
+            <h4 id="topics_view_report">View report</h4>
+            <p> <img alt="" src="assets/images/image_80.png" style="width: 647px; height: 522px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="question_bank">
+            <div class="page-header">
+                <h3>Question Bank</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="question_bank_features">Features</h4>
+            <ul>
+                <li> As the name specifies for this module, you can create any no. of questions for each subject and topic without any limit, Later these can be added to quizzes as per your requirement</li>
+                <li> Later these questions can be added to specific quiz as per your requirement</li>
+                <li> Total 7 types of questions are supported, with this almost any type of requirement is covered</li>
+                <li>
+                    <ul>
+                        <li> Single answer questions / Radio box questions</li>
+                        <li> Multi answer questions / Check box questions</li>
+                        <li> Fill in the blanks questions / Text box questions</li>
+                        <li> Match the following questions</li>
+                        <li> Paragraph questions</li>
+                        <li> Video question</li>
+                        <li> Audio questions</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li> This module is having an option to set a benchmark for answer time for each question so that the performance of the student can be evaluated&nbsp;</li>
+                <li> 3 types of difficulty levels are given
+                    <ul>
+                        <li> Easy</li>
+                        <li> Medium</li>
+                        <li> Hard</li>
+                    </ul>
+                </li>
+                <li> Hint and explanation fildes are given for each question</li>
+                <li> Questions upload with excel</li>
+                <li> Detailed report will be Downloaded after excel questions upload</li>
+            </ul>
+            <h4 id="question_bank_uploading_a_question">Uploading a question</h4>
+            <p> <img alt="" src="assets/images/image_55.png" style="width: 1903px; height: 1725px;"></p>
+            <h4 id="question_bank_question_types">Question Types</h4>
+            <p> <img alt="" src="assets/images/image_47.png" style="width: 828px; height: 214px;"></p>
+            <h4 id="question_bank__nbsp">&nbsp;</h4>
+            <h4 id="question_bank_uploading_single_answer_questions_nbsp">Uploading Single Answer Questions&nbsp;</h4>
+            <p> To upload the single answer question&nbsp;</p>
+            <ol>
+                <li> Select question type as Single Answer</li>
+                <li> Extra fields are added to the bottom of the page</li>
+            </ol>
+            <p> <img alt="" src="assets/images/image_54.png" style="width: 824px; height: 513px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="question_bank_uploading_multi_answer_questions">Uploading Multi Answer Questions</h4>
+            <ol>
+                <li> Select question type as Multi Answer</li>
+                <li> Extra fields are added to the bottom of the page</li>
+            </ol>
+            <p> <img alt="" src="assets/images/image_53.png" style="width: 866px; height: 781px;"></p>
+            <h4 id="question_bank_uploading_fill_in_the_blank_questions">Uploading Fill in the blank Questions</h4>
+            <ol>
+                <li> Select question type as Fill in the blanks</li>
+                <li> Extra fields are added to the bottom of the page</li>
+            </ol>
+            <p> <img alt="" src="assets/images/image_51.png" style="width: 870px; height: 312px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="question_bank_uploading_match_the_following_questions">Uploading Match the following Questions</h4>
+            <ol>
+                <li> Select question type as Match the following</li>
+                <li> Extra fields are added to the bottom of the page</li>
+            </ol>
+            <p> <img alt="" src="assets/images/image_52.png" style="width: 869px; height: 562px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="question_bank_uploading_paragraph_questions">Uploading Paragraph Questions</h4>
+            <ol>
+                <li> Select question type as Paragraph</li>
+                <li> Extra fields are added to the bottom of the page</li>
+            </ol>
+            <p> <img alt="" src="assets/images/image_56.png" style="width: 864px; height: 596px;"></p>
+            <h4 id="question_bank_uploading_audio_video_questions">Uploading Audio/Video Questions</h4>
+            <ol>
+                <li> Select question type as Audio/Video</li>
+                <li> Extra fields are added to the bottom of the page</li>
+            </ol>
+            <p> <img alt="" src="assets/images/image_57.png" style="width: 859px; height: 209px;"></p>
+            <p> <img alt="" src="assets/images/image_56.png" style="width: 864px; height: 596px;"></p>
+            <h4 id="question_bank_uploading_questions_by_excel">Uploading questions by excel</h4>
+            <ol>
+                <li> Download the excel template</li>
+                <li> Fill the template as per the instructions given below</li>
+                <li> Upload the template file</li>
+                <li> View the result of successful records and failed records with reason of fail</li>
+            </ol>
+            <p> <img alt="" src="assets/images/image_48.png" style="width: 861px; height: 316px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="question_bank_details_of_single_answer_template">Details of single answer template</h4>
+            <p> <img alt="" src="assets/images/image_50.png" style="width: 1417px; height: 424px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="question_bank_details_of_multi_answer_template">Details of Multi answer template</h4>
+            <p> <img alt="" src="assets/images/image_500.png" style="width: 1753px; height: 492px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="question_bank_details_of_fill_in_the_blanks_template">Details of Fill in the blanks template</h4>
+            <p> <img alt="" src="assets/images/image_501.png" style="width: 1388px; height: 727px;"></p>
+            <h4 id="question_bank_details_of_report_after_uploading_the_template">Details of report after uploading the template</h4>
+            <p> <img alt="" src="assets/images/image_49.png" style="width: 763px; height: 519px;"></p>
+            <p> &nbsp;</p>
+            <div class="alert">
+                <strong>Note: </strong>Maximum of 3000 questions per excel file is suggested</div>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="instructions">
+            <div class="page-header">
+                <h3>Instructions</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="instructions_features">Features</h4>
+            <ul>
+                <li> Separate instructions set can be maintained for each quiz</li>
+                <li> Easy to create and use</li>
+            </ul>
+            <h4 id="instructions_access_instructions_module">Access Instructions module</h4>
+            <p> <img alt="" src="assets/images/image_16.png" style="width: 360px; height: 431px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="instructions_list_instructions">List Instructions</h4>
+            <p> <img alt="" src="assets/images/image_14.png" style="width: 1714px; height: 755px;"></p>
+            <h4 id="instructions_add_edit_instruction">Add/Edit Instruction</h4>
+            <p> <img alt="" src="assets/images/image_15.png" style="width: 935px; height: 729px;"></p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="quiz_categories">
+            <div class="page-header">
+                <h3>Quiz Categories</h3>
+                <hr class="notop">
+            </div>
+            <div class="alert alert-info">
+                These are used to group similar type of quizzes under one name</div>
+            <h4 id="quiz_categories_features">Features</h4>
+            <ul>
+                <li> Easy to create, edit and delete</li>
+                <li> The same categories are used while Quiz and Exam Series</li>
+            </ul>
+            <h4 id="quiz_categories_access_quiz_category_module">Access quiz category module</h4>
+            <p> <img alt="" src="assets/images/image_59.png" style="width: 344px; height: 430px;"></p>
+            <h4 id="quiz_categories_add_edit_quiz_category">Add/Edit quiz category</h4>
+            <p> <img alt="" src="assets/images/image_58.png" style="width: 1011px; height: 680px;"></p>
+        </section>
+        <section id="quizzes">
+            <div class="page-header">
+                <h3>Quizzes</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="quizzes_features">Features</h4>
+            <ul>
+                <li> First create quiz and later update questions in it</li>
+                <li> Total marks of a quiz is based on the questions added to it</li>
+                <li> Pass marks are decided by pass percentage given in quiz</li>
+                <li> Quiz will be displayed to user based on the given start and end dates</li>
+                <li> The quiz may be paid or free</li>
+                <li> The paid quizzes will have the cost and validity period</li>
+                <li> User friendly interface to update or delete the questions</li>
+                <li> While updating the questions to quiz, handy filters are given to pick your question from large dataset</li>
+            </ul>
+            <h4 id="quizzes_access_quiz_module">Access Quiz module</h4>
+            <p> <img alt="" src="assets/images/image_64.png" style="width: 360px; height: 431px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="quizzes_list_quizzes">List quizzes</h4>
+            <p> <img alt="" src="assets/images/image_63.png" style="width: 1753px; height: 672px;"></p>
+            <h4 id="quizzes_create_edit_quiz">Create/Edit Quiz</h4>
+            <p> <img alt="" src="assets/images/image_60.png" style="width: 1231px; height: 674px;"></p>
+            <h4 id="quizzes_update_questions">Update questions</h4>
+            <p> <img alt="" src="assets/images/image_61.png" style="width: 1181px; height: 476px;"></p>
+            <p> &nbsp;</p>
+            <p> <img alt="" src="assets/images/image_62.png" style="width: 1216px; height: 802px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <div class="alert">
+                <strong>Note: </strong>Maximum of 900 questions per quiz is suggested</div>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="exam_series">
+            <div class="page-header">
+                <h3>Exam Series</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="exam_series_features">Features</h4>
+            <ul>
+                <li> In this module, you can club set of quizzes different together and give a name to it</li>
+                <li> The exam series may be paid or free</li>
+                <li> For paid series you can set the cost and validity in days&nbsp;</li>
+                <li> The series may contain the paid or free quizzes</li>
+                <li> In free series, if any paid quizzes available, the user need to buy that specific quiz from quiz module</li>
+                <li> User friendly interface to add/update quizzes in exam series module</li>
+                <li> Dynamically the no. of quizzes and no. of questions will be updated to specific series after creating it</li>
+            </ul>
+            <h4 id="exam_series_access_exam_series_module">Access Exam Series Module</h4>
+            <p> <img alt="" src="assets/images/image_9.png" style="width: 323px; height: 437px;"></p>
+            <h4 id="exam_series_list_exam_series">List exam series</h4>
+            <p> <img alt="" src="assets/images/image_8.png" style="width: 1349px; height: 645px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="exam_series_create_edit_exam_series">Create/Edit exam series</h4>
+            <p> <img alt="" src="assets/images/image_7.png" style="width: 794px; height: 1129px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <h4 id="exam_series_update_quizzes_in_exam_series">Update quizzes in exam series</h4>
+            <p> <img alt="" src="assets/images/image_10.png" style="width: 1216px; height: 452px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="coupon_codes">
+            <div class="page-header">
+                <h3>Coupon Codes</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="coupon_codes_features">Features</h4>
+            <ul>
+                <li> This module will have all needed features to provide coupon codes</li>
+                <li> This module can be enabled or disabled from admin panel</li>
+                <li> Option to enable coupon codes for specific modules</li>
+                <li> Maximum limit of using single coupon code per user</li>
+                <li> Minimum bill amount to use the coupon</li>
+                <li> Start and end dates to use the coupon code</li>
+                <li> Discount can be given in percentage or value</li>
+                <li> Maximum amount of discount to give in percentage type of discount</li>
+            </ul>
+            <h4 id="coupon_codes_access_coupons_module">Access Coupons Module</h4>
+            <p> <img alt="" src="assets/images/image_5.png" style="width: 321px; height: 108px;"></p>
+            <h4 id="coupon_codes_create_edit_coupon_code">Create/Edit coupon code</h4>
+            <p> <img alt="" src="assets/images/image_3.png" style="width: 792px; height: 779px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="coupon_codes_enable_disable_coupons_module">Enable/Disable Coupons module</h4>
+            <p> For this go to Master settings-&gt;Settings-&gt;Modules Management</p>
+            <p> <img alt="" src="assets/images/image_4.png" style="width: 584px; height: 474px;"></p>
+        </section>
+        <section id="lms_categories">
+            <div class="page-header">
+                <h3>LMS Categories</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="lms_categories_features">Features</h4>
+            <ul>
+                <li> LMS Categories are the name of similar type of LMS Series</li>
+                <li> While creating the series, the category is selected</li>
+                <li> By this category, the user can easy navigate to the required series</li>
+            </ul>
+            <h4 id="lms_categories_access_lms_categories">Access LMS Categories</h4>
+            <p> <img alt="" src="assets/images/image_22.png" style="width: 329px; height: 175px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="lms_categories_add_edit_category">Add/Edit Category</h4>
+            <p> <img alt="" src="assets/images/image_21.png" style="width: 589px; height: 528px;"></p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="lms_contents">
+            <div class="page-header">
+                <h3>LMS Contents</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="lms_contents_features">Features</h4>
+            <ul>
+                <li> This module contains a set of contents which can be used to create LMS Series</li>
+                <li> Each content is associated to specific subject</li>
+                <li> Total 7 types of contents are supported i.e.,
+                    <ul>
+                        <li> File</li>
+                        <li> Video File</li>
+                        <li> Audio File</li>
+                        <li> Video URL</li>
+                        <li> Audio URL</li>
+                        <li> Iframe</li>
+                        <li> URL</li>
+                    </ul>
+                </li>
+                <li> Easy to add edit the contents</li>
+            </ul>
+            <h4 id="lms_contents_access_lms_contents">Access LMS Contents</h4>
+            <p> <img alt="" src="assets/images/image_26.png" style="width: 318px; height: 180px;"></p>
+            <h4 id="lms_contents_add_edit_contents">Add Edit Contents</h4>
+            <p> <img alt="" src="assets/images/image_23.png" style="width: 592px; height: 922px;"></p>
+            <h4 id="lms_contents_lms_content_types">LMS Content Types</h4>
+            <p> <img alt="" src="assets/images/image_27.png" style="width: 259px; height: 204px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="lms_contents_uploading_file_type_of_content">Uploading File type of content</h4>
+            <p> This options is used to upload any downloadable materials like text documents</p>
+            <h4 id="lms_contents_uploading_video_file">Uploading Video File</h4>
+            <p> In this you can upload mp4 videos.</p>
+            <p> These will be played at front end for the user</p>
+            <h4 id="lms_contents_uploading_audio_file">Uploading Audio File</h4>
+            <p> In this you can upload mp3 files</p>
+            <h4 id="lms_contents_uploading_video_url_type_content">Uploading Video URL type content</h4>
+            <p> In this, you can give direct video URL&#39;s</p>
+            <div class="alert">
+                <strong>Note: </strong>Direct youtube urls will not work. The URL should end with file type like .mp4 etc</div>
+            <h4 id="lms_contents_uploading_nbspaudio_url_type_content">Uploading &nbsp;Audio URL type content</h4>
+            <p> In this, you can give direct audio URL&#39;s</p>
+            <div class="alert">
+                <strong>Note:&nbsp;</strong>Direct youtube urls will not work. The URL should end with file type like .mp3 etc</div>
+            <div>
+                &nbsp;</div>
+            <p> <strong>Uploading URL type content</strong></p>
+            <p> In this you can give any external resource URL link that will redirect the user to that page</p>
+            <h4 id="lms_contents_uploading_iframe_type_content">Uploading Iframe type content</h4>
+            <p> In this you can give the Iframe code or the src path&nbsp;</p>
+            <div class="alert alert-info">
+                Suggest to give src path as below for better user interface with predefined height and width</div>
+            <p> <img alt="" src="assets/images/image_24.png" style="width: 457px; height: 135px;"></p>
+            <p> &nbsp;</p>
+            <p> <img alt="" src="assets/images/image_25.png" style="width: 845px; height: 106px;"></p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="lms_series">
+            <div class="page-header">
+                <h3>LMS Series</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="lms_series_features">Features</h4>
+            <ul>
+                <li> These are the collection of different type of contents</li>
+                <li> Each series is associated to specific category so that user can easily find particular series based on his requirement</li>
+                <li> Seres are having an option to set the start date and end date to visible for end user</li>
+                <li> Series may be free or paid</li>
+                <li> For paid type of series, there will be extra fields to accept the validity of the series and the cost of series</li>
+            </ul>
+            <h4 id="lms_series_access_lms_series">Access LMS Series</h4>
+            <p> <img alt="" src="assets/images/image_30.png" style="width: 306px; height: 181px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="lms_series_list_lms_series">List LMS Series</h4>
+            <p> <img alt="" src="assets/images/image_29.png" style="width: 1192px; height: 490px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="lms_series_add_edit_series">Add/Edit Series</h4>
+            <p> <img alt="" src="assets/images/image_28.png" style="width: 786px; height: 1117px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="payments_module">
+            <div class="page-header">
+                <h3>Payments Module</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="payments_module_features">Features</h4>
+            <ul>
+                <li> Online Payment Reports</li>
+                <li> Offline Payment Reports</li>
+                <li> Detailed chart reports for online and offline payment</li>
+                <li> Detailed chart reports for success, failed and pending payments</li>
+                <li> Admin is having an option to <strong>Approve </strong>or <strong>Reject</strong> the offline payment by viewing the details</li>
+                <li> Generate report to excel with all type of combinations</li>
+                <li> Option to enable/disable payments module</li>
+                <li> Option to enable/disable offline payments module</li>
+                <li> Option to edit the information for offline payments</li>
+            </ul>
+            <h4 id="payments_module_access_payment_reports_module">Access Payment Reports Module</h4>
+            <p> <img alt="" src="assets/images/image_36.png" style="width: 323px; height: 179px;"></p>
+            <h4 id="payments_module_online_payments_dashboard">Online Payments Dashboard</h4>
+            <p> <img alt="" src="assets/images/image_42.png" style="width: 1243px; height: 697px;"></p>
+            <h4 id="payments_module_offline_payments_dashboard">Offline payments dashboard</h4>
+            <p> <img alt="" src="assets/images/image_39.png" style="width: 1236px; height: 698px;"></p>
+            <h4 id="payments_module_offline_pending_records">Offline pending records</h4>
+            <p> <img alt="" src="assets/images/image_41.png" style="width: 1189px; height: 261px;"></p>
+            <p> <img alt="" src="assets/images/image_38.png" style="width: 848px; height: 473px;"></p>
+            <h4 id="payments_module_payment_options_settings">Payment Options Settings</h4>
+            <p> <strong>Step 1</strong></p>
+            <p> <img alt="" src="assets/images/image_44.png" style="width: 323px; height: 116px;"></p>
+            <p> <strong>Step 2</strong><img alt="" src="assets/images/image_43.png" style="width: 1200px; height: 872px;"></p>
+            <p> Step 3:</p>
+            <p> <img alt="" src="assets/images/image_40.png" style="width: 596px; height: 445px;"></p>
+            <h4 id="payments_module_enable_or_disable_offline_payment">Enable or disable Offline payment</h4>
+            <p> <img alt="" src="assets/images/image_37.png" style="width: 1197px; height: 361px;"></p>
+            <p> &nbsp;</p>
+            <p> <img alt="" src="assets/images/image_34.png" style="width: 598px; height: 479px;"></p>
+            <h4 id="payments_module_export_payment_records">Export Payment Records</h4>
+            <p> <img alt="" src="assets/images/image_35.png" style="width: 787px; height: 618px;"></p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="notifications">
+            <div class="page-header">
+                <h3>Notifications</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="notifications_features">Features</h4>
+            <ul>
+                <li> Notifications can be created by admin and those will be displayed to user</li>
+                <li> Notifications have the date range to display between specific dates</li>
+                <li> Can give short and long descriptions to it</li>
+                <li> Having an option to give external resource link</li>
+            </ul>
+            <h4 id="notifications_access_notifications_module">Access Notifications module</h4>
+            <p> <img alt="" src="assets/images/image_33.png" style="width: 296px; height: 303px;"></p>
+            <h4 id="notifications_add_edit_notification">Add edit notification</h4>
+            <p> <img alt="" src="assets/images/image_32.png" style="width: 792px; height: 925px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="feedbacks">
+            <div class="page-header">
+                <h3>Feedbacks</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="feedbacks_features">Features</h4>
+            <ul>
+                <li> User can give feedback to the admin</li>
+                <li> Admin can view the feedback</li>
+            </ul>
+            <h4 id="feedbacks_accessing_feedback_module">Accessing Feedback module</h4>
+            <p> <img alt="" src="assets/images/image_13.png" style="width: 88px; height: 315px;"></p>
+            <h4 id="feedbacks_feedbacks_list">Feedbacks list</h4>
+            <p> <img alt="" src="assets/images/image_12.png" style="width: 1196px; height: 360px;"></p>
+            <h4 id="feedbacks_feedback_details">Feedback details</h4>
+            <p> <img alt="" src="assets/images/image_11.png" style="width: 602px; height: 237px;"></p>
+        </section>
+        <section id="parent">
+            <div class="page-header">
+                <h3>Parent</h3>
+                <hr class="notop">
+            </div>
+            <h4 id="parent_features">Features</h4>
+            <ul>
+                <li> This module can be enabled or disabled from admin panel</li>
+                <li> Parent can add his children</li>
+                <li> View the list of Exam categories, &nbsp;exam series and LMS Series</li>
+                <li> User Preferences option is provided i.e, the parent can set his&nbsp;preferred categories in different modules</li>
+                <li> Option to view the children detailed reports</li>
+                <li> Option to buy exam on behalf of his child</li>
+            </ul>
+            <p> <strong>List of screen shots in parent module</strong></p>
+            <h4 id="parent_parent_dashboard">Parent Dashboard</h4>
+            <p> <img alt="" src="assets/images/image_97.png" style="width: 1340px; height: 464px;"></p>
+            <h4 id="parent_access_children_module">Access Children module</h4>
+            <p> <img alt="" src="assets/images/image_96.png" style="width: 324px; height: 113px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="parent_children_list">Children List</h4>
+            <p> <img alt="" src="assets/images/image_98.png" style="width: 1195px; height: 408px;"></p>
+            <h4 id="parent_children_dashboard">Children Dashboard</h4>
+            <p> <img alt="" src="assets/images/image_100.png" style="width: 1223px; height: 807px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="parent_parent_preferencesimg_alt" "_src"http_conquerorslabscom_exam2_document_images_parent_parent_preferencespng "_style"width_753px_height_136px "">Parent Preferences<img alt="" src="assets/images/image_99.png" style="width: 753px; height: 136px;"></h4>
+            <p> <img alt="" src="assets/images/image_101.png" style="width: 789px; height: 494px;"></p>
+            <h4 id="parent_buying_a_package_for_child">Buying a package for child</h4>
+            <p> <img alt="" src="assets/images/image_94.png" style="width: 1212px; height: 397px;"></p>
+            <p> &nbsp;</p>
+            <p> <img alt="" src="assets/images/image_95.png" style="width: 1198px; height: 832px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="parent_send_feedback_to_admin">Send Feedback to admin</h4>
+            <p> <img alt="" src="assets/images/image_93.png" style="width: 983px; height: 636px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+        <section id="student">
+            <div class="page-header">
+                <h3>Student</h3>
+                <hr class="notop">
+            </div>
+            <p> Features</p>
+            <ul>
+                <li> Student is having&nbsp;flexible options &nbsp;for settings</li>
+                <li> Can take exams with many options</li>
+                <li> Multiple payment gateways</li>
+                <li> Detailed time and marks analysis reports</li>
+                <li> Detailed subject wise analysis reports</li>
+                <li> Free and paid LMS module</li>
+                <li> Free and paid Exam series and quiz modules</li>
+            </ul>
+            <h4 id="student_student_dashboard">Student dashboard</h4>
+            <p> <img alt="" src="assets/images/image_111.png" style="width: 1238px; height: 639px;"></p>
+            <h4 id="student_exam_form">Exam form</h4>
+            <p> <img alt="" src="assets/images/image_115.png" style="width: 1246px; height: 753px;"></p>
+            <p> <img alt="" src="assets/images/image_114.png" style="width: 1251px; height: 672px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="student_analysis_reports">Analysis Reports</h4>
+            <p> <img alt="" src="assets/images/image_108.png" style="width: 329px; height: 173px;"></p>
+            <p> &nbsp;</p>
+            <p> <img alt="" src="assets/images/image_113.png" style="width: 1196px; height: 1032px;"></p>
+            <p> <img alt="" src="assets/images/image_110.png" style="width: 1203px; height: 875px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <h4 id="student_quiz_attempts_analysis">Quiz Attempts analysis</h4>
+            <p> <img alt="" src="assets/images/image_109.png" style="width: 1189px; height: 1422px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="student_analysis_by_exam">Analysis by exam</h4>
+            <p> <img alt="" src="assets/images/image_105.png" style="width: 1193px; height: 813px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <h4 id="student_single_exam_analysis">Single exam analysis</h4>
+            <p> <img alt="" src="assets/images/image_107.png" style="width: 1191px; height: 662px;"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> <img alt="" src="assets/images/image_106.png" style="width: 1189px; height: 765px;"></p>
+            <h4 id="student_exam_series">Exam series</h4>
+            <p> <img alt="" src="assets/images/image_112.png" style="width: 1188px; height: 674px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="student_lms_series">LMS Series</h4>
+            <p> <img alt="" src="assets/images/image_103.png" style="width: 1191px; height: 1423px;"></p>
+            <p> &nbsp;</p>
+            <h4 id="student_preference_settings">Preference Settings</h4>
+            <p> <img alt="" src="assets/images/image_104.png"></p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+            <p> &nbsp;</p>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+         <section id="changes_log">
+            <div class="page-header">
+            <h3> OES update - New Features - Change Log Released Date: 06 June 2019</h3>
+                <hr class="notop">
+            </div>
+
+            <ul>
+
+              <li>Resume Builder</li>
+
+              <li>New Exam Layout</li>
+
+              <li>Search feature added for Practice Exams, LMS front end</li>
+
+              <li>Admin can add unlimited pages (front end CMS)</li>
+
+              <li>Admin can add FAQs, which reflects in front end</li>
+
+              <li>Admin can add Blogs, which reflects in front end</li>
+
+              <li>All quizzes free and paid can appear on the home page with/without registration</li>
+
+              <li>Student feedback about system or exams based. Only admin approved Testimonies will be displayed in front end</li>
+
+              <li>The Administrator can assign the categories to the students</li>
+
+              <li>Admin can Enable/Disable User Account</li>
+
+              <li>Email Activation link for registered users</li>
+
+            </ul>
+
+            <p class="_AXc" style="margin: 0px 0px 4px; padding: 0px; border: 0px; list-style-type: disc;">
+                &nbsp;</p>
+        </section>
+
+
+    </div>
+</body>
+
+</html>

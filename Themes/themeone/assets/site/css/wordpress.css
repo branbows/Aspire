@@ -1,0 +1,335 @@
+/* Genaral */
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+a {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:active,
+a:active,
+a:focus {
+    outline: none;
+    text-decoration: none;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.pw-text-color {
+    color: #8260b7;
+}
+
+table {
+    width: 100%;
+    background: #fff;
+}
+
+table td,
+table th {
+    padding: 8px;
+    border: 1px solid #e6e6e6;
+    text-align: right;
+}
+
+table th {
+    background: #f9f9f9;
+    font-weight: bold;
+}
+
+table caption {
+    padding: 1em 0;
+    text-align: center;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    line-height: 1.4;
+    margin: 4px 0 0;
+    padding: 0 0 .5em 0;
+}
+
+/* ----------------------------------------
+Wordpress Related
+---------------------------------------- */
+/*Contact form7 plugin*/
+.wpcf7-submit {
+    padding: 21px 21px 16px 21px;
+    min-width: 200px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Baloo Paaji', cursive;
+    text-align: center;
+    border: 0;
+    border-radius: 0px;
+    border-radius: 5px;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+    background: #fdd80f;
+    color: #262626;
+    box-shadow: 0px 3px 0px 0px #e5c309;
+}
+
+.wpcf7-submit:hover {
+    background: #ff9800;
+    box-shadow: 0px 3px 0px 0px #e98d04;
+    color: #262626;
+    outline: none;
+}
+
+@media(max-width:768px) {
+    .wpcf7-submit {
+        width: 100%;
+    }
+}
+
+/*Visual composer plugin */
+
+.vc_col-has-fill>.vc_column-inner,
+.vc_row-has-fill+.vc_row-full-width+.vc_row>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill+.vc_row>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill+.vc_vc_row>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill+.vc_vc_row_inner>.vc_row>.vc_vc_column_inner>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill>.vc_row>.vc_vc_column>.vc_column_container>.vc_column-inner,
+.vc_row-has-fill>.vc_vc_column_inner>.vc_column_container>.vc_column-inner {
+    padding-top: 0 !important;
+}
+/* wordpress maps widget */
+.wpb_gmaps_widget.wpb_content_element {
+    margin-bottom: 0 !important;
+}
+
+/*Wordpress Core */
+
+
+.says,
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+.gallery-caption {
+    color: #707070;
+    color: rgba(51, 51, 51, 0.7);
+    display: block;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 12px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0.5em 0;
+}
+
+
+/**
+* 2.0 - Genericons
+*/
+
+.social-navigation a:before,
+.secondary-toggle:before,
+.dropdown-toggle:after,
+.bypostauthor > article .fn:after,
+.comment-reply-title small a:before,
+.comment-navigation .nav-next a:after,
+.comment-navigation .nav-previous a:before,
+.posted-on:before,
+.byline:before,
+.cat-links:before,
+.tags-links:before,
+.comments-link:before,
+.entry-format:before,
+.edit-link:before,
+.full-size-link:before,
+.pagination .prev:before,
+.pagination .next:before,
+.image-navigation a:before,
+.image-navigation a:after,
+.format-link .entry-title a:after,
+.entry-content .more-link:after,
+.entry-summary .more-link:after,
+.author-link:after {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-family: "Genericons";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    line-height: 1;
+    speak: none;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    vertical-align: top;
+}
+
+.alignright {
+    display: inline;
+    float: right;
+}
+
+.widget blockquote.alignleft,
+.widget .wp-caption.alignleft,
+.widget img.alignleft {
+    margin: 0.5em 1.5em 1.5em 0;
+}
+
+blockquote.aligncenter,
+.wp-caption.aligncenter,
+img.aligncenter {
+    margin-top: 0.4211em;
+    margin-bottom: 1.6842em;
+}
+
+.bootstrap-select button {
+    min-width: 100%;
+}
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 20px auto;
+}
+
+.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 20px auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+}
+
+
+/*Pagination*/
+
+.page-numbers {
+    font-size: 16px;
+    font-weight: 700;
+    color: #232222;
+    padding: 6px 12px;
+    line-height: initial;
+    border: 1px solid #d0d4d6;
+    border-radius: 0;
+    background: #fff;
+}
+
+.page-numbers.current {
+    border-color: #f7b926;
+}
+
+.page-numbers:hover,
+.page-numbers:focus {
+    color: #f7b926;
+}
+
+
+/*Gallery*/
+
+.gallery {
+    float: left;
+}
+
+figure.gallery-item {
+    float: left;
+    width: 48.33%;
+    margin: 2px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+figure.gallery-item img {
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+@media(min-width:768px) {
+    figure.gallery-item {
+        float: left;
+        width: 32.33%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}

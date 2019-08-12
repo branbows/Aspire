@@ -1,0 +1,6 @@
+/* Blue -Sidebar */
+.side-nav,body:before{background: #4786ff;}
+
+.side-nav>li>a,.side-nav>li>a .fa{color: #b7d0ff}
+.side-nav > li.active > a, .side-nav > li.active > a .fa{color: #fff !important}
+/* Blue -Sidebar ends*/

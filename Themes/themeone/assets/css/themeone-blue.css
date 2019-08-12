@@ -1,0 +1,55 @@
+ /* Blue - Navbar */
+/*.navbar-custom{ background: #03a9f3;}
+.top-nav>li>a{color: #fff}
+.top-profile-menu h2{color: #fff}
+.top-profile-menu .mdi{color: #f0f0f0}*/
+/* Blue - Navbar ends */
+
+/* Dark - Navbar */
+/*.navbar-custom{ background: #4F5467;}
+.top-nav>li>a{color: #fff}
+.top-profile-menu h2{color: #fff}
+.top-profile-menu .mdi{color: #f0f0f0}*/
+/* Dark - Navbar ends */
+
+/* Blue -Sidebar */
+/*.side-nav,body:before{background: #4786ff;}
+
+.side-nav>li>a,.side-nav>li>a .fa{color: #b7d0ff}
+.side-nav > li.active > a, .side-nav > li.active > a .fa{color: #fff !important}*/
+/* Blue -Sidebar ends*/
+
+/* Dark - Theme */
+/*body{ background: #3c4452}
+.navbar-custom{background: #4c5667;box-shadow: none;border:0;}
+.side-nav,body:before{background: #353c48;box-shadow: none}
+.box-ws{background: #353c48}
+.side-nav>li>a{color: #8d97ad}
+.panel-custom,.dsPanel.panel-primary{background: #353c48}
+.top-nav>li>a{color: #fff}
+.top-profile-menu h2{color: #fff}
+.top-profile-menu .mdi{color: #f0f0f0}
+.state-media h4,.dsPanel .panel-heading,.side-nav>li>a .fa{color: #ced4da}
+table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td{background: #353c48}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{border-color: #4c5667 !important;color: #ced4da}
+.panel-custom .panel-heading{border-color: #4c5667}
+.form-control,.panel-custom .panel-heading h1,label,table.dataTable thead th{color: #ced4da !important}
+.pagination li a {
+    background: #3b4451 !important;}
+    .inbox-message-list{border-color: #3c4452}
+    .inbox-message-list li.unread-message, .unread-message.alert-info{background: #4c5667;}
+    .inbox-message-list li + li {
+    border-top: 1px solid #353b48;
+}
+.unread-message.alert-info h3,.unread-message.alert-info .message-suject p{color: #ced4da}
+.sidemenu-dropdown,.nav>li>a:focus, .nav>li>a:hover,.dropdown-menu{background: #000 !important}
+.navbar-nav > li > .sidemenu-dropdown > li a{color: #ced4da}
+.top-nav > .open.profile-menu > .dropdown-menu> li > a:hover {
+    background: #353b48;
+}
+.bg-icon-blue {
+    background-color: #0044cc1c;
+    border: 1px solid #a0c0ff94;
+    color: #2b6ff7ad;
+}*/
+/* Dark - Theme ends

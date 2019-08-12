@@ -1,0 +1,19 @@
+{
+  "name": "valdr",
+  "main": [
+    "./valdr.js",
+    "./valdr-message.js"
+  ],
+  "homepage": "https://github.com/netceteragroup/bower-valdr",
+  "version": "1.1.6",
+  "_release": "1.1.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.1.6",
+    "commit": "47cffc6a51d0f5cf6f5cb667d3988ddc62355bae"
+  },
+  "_source": "https://github.com/netceteragroup/bower-valdr.git",
+  "_target": "^1.1.6",
+  "_originalSource": "valdr",
+  "_direct": true
+}

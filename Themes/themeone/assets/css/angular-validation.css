@@ -1,0 +1,33 @@
+.validation-error {
+    display: block;
+    background: #fff4f2;
+    color: #e4391f;
+    padding: 3px 10px;
+}
+.validation-error p {
+    margin: 0;
+}
+.form-control.has-error {
+    border-color: #ffd2ca;
+}
+.form-control.has-error:focus {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 91, 62, 0.6)
+}
+.form-control + .validation-error {
+    display: none;
+}
+.form-control.has-error + .validation-error {
+    display: block;
+}
+.form-control.has-error + .validation-error p {
+    margin: 0;
+    font-size: 13px;
+    
+}
+.validation-align .form-control.has-error + .validation-error p {
+    position: static;
+}
+.form-auth-style .form-control.has-error + .validation-error p {
+    bottom: -14px;
+    left: 0;
+}

@@ -1,0 +1,20 @@
+{
+  "author": "Netcetera AG",
+  "name": "valdr",
+  "description": "A model centric approach to AngularJS form validation",
+  "homepage": "https://github.com/netceteragroup/valdr",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/netceteragroup/valdr"
+  },
+  "devDependencies": {
+    "angular": "1.3.3",
+    "angular-mocks": "1.3.3",
+    "angular-translate": "2.4.2",
+    "jasmine": "1.3.0",
+    "momentjs": "2.8.3"
+  },
+  "dependencies": {
+    "valdr": "~1.1.6"
+  }
+}
